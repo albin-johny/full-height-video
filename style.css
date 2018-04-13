@@ -1,0 +1,463 @@
+
+/*
+*******************************************
+*******************************************
+
+@File: Inviting Theme Styles
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+|index page styles|
+
+**	1.01 -	Browser Reset + Common styles.
+**	1.02 -	Preloader Styles.
+**	1.03 -	Color-Changer Styles.
+**	1.04 -	Top-bar Area Styles.
+**	1.05 -	Header Area Styles.
+**	1.06 -	Hero Area Styles.
+**	1.07 -  Services Area Styles.
+**	1.08 -  who Area styles.
+**	1.9 -  choose Area styles.
+**	1.10 -	team Area styles.
+**	1.11 -  client Area styles.
+**	1.12 -  commited Area styles.
+**	1.13 -  blog Area styles.
+**	1.14 -  advice Area styles.
+**	1.15 -  partner Area styles.
+**	1.16 -  request Area styles.
+**	1.17 -  google-map Area styles.
+**	1.18 -  Footer styles.
+
+
+|Single Pages Styles|
+
+
+**	2.00 -  Version-1 Styles.
+**	3.00 -	Version-2 Styles.
+**	4.00 -  Version-3 Styles.
+**	5.00 -  Version-4 Styles.
+**	6.00 -	Version-5 Styles.
+**	7.00 -	Version-6 Styles.
+**	8.00 -	Version-7 Styles.
+**	9.00 -	Version-8 Styles.
+**	10.00 -	Version-9 Styles.
+
+
+******************************************
+******************************************
+**/
+
+
+/*
+*****************************************
+    >>> |Imported Css|
+*****************************************
+*/
+
+@import url("css/bootstrap.min.css");
+@import url("css/font-awesome.min.css");
+@import url("css/owl.carousel.css");
+@import url("css/swipebox.min.css");
+@import url("css/animate.css");
+@import url("css/barfiller-css/barfiller.css");
+@import url("css/responsive.css");
+@import url("css/layout.css");
+
+
+/*
+*****************************************
+    >>> |Imported Fonts|
+*****************************************
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic,600italic");
+
+
+
+/* *****************************************
+	>>> 1.01	Browser Reset & Common Css
+***************************************** */
+/* Base CSS */
+html, body {
+    height: 100%;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { overflow: hidden }
+
+h1, 
+h2 {
+    margin: 0 0 15px;
+    font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ 
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	color:#7B7B7B;
+	
+}
+
+button{
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+body {
+	background:transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	
+}
+a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+}
+a {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+	
+}
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+
+
+/* ===============================================================
+						HEADER-AREA END
+================================================================== */
+
+
+
+
+
+/* ===============================================================
+					1.06	 HERO-AREA START
+================================================================== */
+ 
+
+.hero-area {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.hero-area-bg {
+	background: rgba(0, 0, 0, 0) url("images/hero-area-bg.jpg") repeat scroll center center / cover ;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+.hero-area-bg::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.73;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.hero-area-content {
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+.hero-area-table {
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 50px;
+}
+.hero-area-tablecell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.hero-area h1 {
+	color: #fff;
+	font-size: 36px;
+	margin: 0;
+	padding-bottom: 35px;
+	text-transform: uppercase;
+}
+.hero-area-tablecell > p {
+	color: #e2e2e2;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 2;
+}
+/* Hero-area-button Start */
+
+.single-button {
+    background: transparent none repeat scroll 0 0 !important;
+    border: 1px solid #ffffff;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 185px;
+	position:relative;
+}
+.hero-area-button {
+    padding-top: 50px;
+}
+.single-button.about-btn {
+    background: #00aff0 none repeat scroll 0 0 !important;
+    border: 1px solid #00aff0;
+}
+
+.single-button.contact-btn::after {
+    background: #00aff0 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.6s ease 0s;
+    visibility: hidden;
+    width: 0;
+    z-index: -1;
+}
+
+.single-button.contact-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+.single-button:hover {
+    color: #fff;
+}
+
+/* Hero-area-button End */
+
+.hero-area .carousel {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.hero-area .carousel-inner {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.hero-area .item {
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+.carousel-indicators .active {
+	background-color: #00aff0;
+	border: 1px solid transparent;
+	border-radius: 0;
+	height: 6px;
+	margin: 0;
+	width: 40px;
+}
+ol.carousel-indicators li {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid transparent;
+	border-radius: 0;
+	display: inline-block;
+	height: 5px;
+	width: 10px;
+}
+.hero-area-bg.slide-1 {
+  background: url(images/slide-1.jpg) repeat scroll 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.hero-area-bg.slide-2 {
+	background: url(images/slide-2.jpg) repeat scroll 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.hero-area-bg.slide-3 {
+	background: url(images/who-area-left-bg.jpg) repeat scroll 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.hero-area-bg.slide-4 {
+    background: url(images/slide-4.jpg) repeat scroll 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.carousel-indicators {
+	bottom: 25px;
+}
+
+
+/* ================================================================
+					 Hero-area-text Amimation START
+===================================================================*/
+.hero-area h1 {
+  -webkit-animation: fadeInLeftBig 500ms linear 500ms both;
+  animation: fadeInLeftBig 500ms linear 500ms both;
+}
+
+.hero-area-tablecell p{
+  -webkit-animation: fadeInDown 700ms linear 700ms both;
+  animation: fadeInDown 700ms linear 700ms both;
+}
+
+.single-button{
+  -webkit-animation: fadeInRightBig 500ms linear 500ms both;
+  animation: fadeInRightBig 500ms linear 500ms both;
+}
+
+/* ================================================================
+					 Hero-area-text Amimation End
+===================================================================*/
+
+
+
+
+
+
+
+
+.header-bg-video {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+video#bgvid { 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+}
+
+.header-bg-video::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+
+
+/* ================================================================
+				Version-8 Style End For Video Background
+===================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
